@@ -1,0 +1,53 @@
+try mkdir ~/.local/share/icons/default
+echo "[Icon Theme]
+Name=Default
+Comment=Default Cursor Theme
+Inherits=<cursorTheme>" > ~/.local/share/icons/default/index.theme
+this did it for me for rofi, maybe it could be your issue for electron
+
+
+sudo libinput list-devices
+evtest --grab /dev/input/event3
+
+#Fetch Latest 25 Mirrors Sort by Speed, After this run pacman -Syyu and yay -Syyu
+sudo reflector --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
+
+https://superuser.com/questions/1321821/cant-boot-computer-after-enabling-client-hyper-v
+
+Backup Syntax
+Sample: sudo rsync -aAXv --delete --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/mnt/*,/media/*,/home/*,/lost+found} /source /destination
+Real: sudo rsync -aAXv --delete --exclude={/home/umer/KVM_IMAGES/*,/home/umer/.cache/*} /home /run/media/umer/Backups/rsync/
+
+Restore Syntax
+Sample: sudo rsync -aAXv --delete /backup /system
+Real: sudo rsync -aAXv --delete /run/media/umer/Backups/rsync/ /home
+
+[root@ngelinux001 userA]# lsof /dev/nvidia*
+COMMAND  PID USER   FD   TYPE  DEVICE SIZE/OFF  NODE NAME
+lim     5410 root    5u   CHR 195,255      0t0 11522 /dev/nvidiactl
+
+### Lets see the process ID which file is used by the process.
+[root@ngelinux001 userA]# ps -ef | grep -i 5410
+root       6608   5410  0 23:23 ?        00:00:00 /grid/sfi/farm/server01/10.1.8/linux3.10-glibc2.17-x86_64/etc/pim
+root       6665   5617  0 23:23 pts/2    00:00:00 grep --color=auto -i 5410
+
+[root@ngelinux001 userA]# kill -9 5410
+[root@ngelinux001 userA]# ps -ef | grep -i 5410
+root       6703   5617  0 23:23 pts/2    00:00:00 grep --color=auto -i 5410
+
+/etc/default/grub  >>>
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nvidia_drm.modeset=1 rd.driver.blacklist=nouveau modprobe.blacklist=nouveau module_blacklist=nouveau"
+GRUB_GFXMODE=1920x1080
+GRUB_GFXPAYLOAD_LINUX=keep
+>>>  grub-mkconfig -o /boot/grub/grub.cfg
+
+/etc/mkinitcpio.conf  >>>
+MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
+Remove "kms" from the HOOKS array in /etc/mkinitcpio.conf and regenerate the initramfs. This will prevent the initramfs
+from containing the nouveau module making sure the kernel cannot load it during early boot.
+>>>  mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
+>>>  mkinitcpio -P
+copy nvidia.hook to /etc/pacman.d/hooks/nvidia.hook
+
+add a new line to /etc/modprobe.d/nvidia.conf (make it if it does not exist) and add the line >>>
+options nvidia-drm modeset=1
