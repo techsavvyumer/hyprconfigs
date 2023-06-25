@@ -1,0 +1,183 @@
+Setting up watches.
+Watches established.
+[2023-06-19 10:56:22.421] [info] Using configuration file /home/umer/.config/waybar/config.jsonc
+[2023-06-19 10:56:22.422] [info] Using CSS file /home/umer/.config/waybar/style.css
+[2023-06-19 10:56:22.436] [info] Hyprland IPC starting
+[2023-06-19 10:56:22.581] [info] Bar configured (width: 1920, height: 32) for output: eDP-1
+
+** (waybar:98231): WARNING **: 10:56:22.615: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:98231): WARNING **: 10:56:22.615: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:98231): WARNING **: 10:56:22.876: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:98231): WARNING **: 10:56:22.876: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+ok
+ok
+ok
+ok
+ok
+ok
+sh: line 1: activate: command not found
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 14:43:53.755: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 14:43:53.847: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 14:43:54.156: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 14:43:54.255: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 14:43:54.353: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 14:43:54.451: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 14:43:54.553: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 14:43:54.653: Unable to replace properties on 0: Error getting properties for ID
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+sh: line 1: activate: command not found
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 19:58:17.913: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 19:58:18.034: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 19:58:18.120: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 19:58:18.228: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 19:58:18.313: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 19:58:18.415: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 19:58:18.514: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 19:58:18.615: Unable to replace properties on 0: Error getting properties for ID
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 22:22:31.681: Unable to replace properties on 0: Error getting properties for ID
+
+(waybar:98231): LIBDBUSMENU-GLIB-WARNING **: 22:22:32.083: Unable to replace properties on 0: Error getting properties for ID
+ok
+ok
+ok
+ok
+ok
+ok
+Selected theme: Catppuccin-Mocha
+eDP-1: 1920x1080, scale: 1, currently displaying: image: "48278-art-creative_arts-freezing-painting-snow-1920x1080.jpg"
+kitty: no process found
+ok
+[2023-06-19 22:29:28.301] [info] Reloading...
+
+(waybar:98231): GLib-GIO-WARNING **: 22:29:28.310: Invalid id 2 passed to g_bus_unwatch_name()
+[2023-06-19 22:29:28.334] [info] Using configuration file /home/umer/.config/waybar/config.jsonc
+[2023-06-19 22:29:28.334] [info] Using CSS file /home/umer/.config/waybar/style.css
+[2023-06-19 22:29:28.555] [info] Bar configured (width: 1920, height: 32) for output: eDP-1
+
+** (waybar:98231): WARNING **: 22:29:28.669: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:98231): WARNING **: 22:29:28.675: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:98231): WARNING **: 22:29:29.488: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:98231): WARNING **: 22:29:29.488: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+Updated device 'acpi_video0':
+Device 'acpi_video0' of class 'backlight':
+	Current brightness: 20 (20%)
+	Max brightness: 100
+
+ok
+ok
+Terminated

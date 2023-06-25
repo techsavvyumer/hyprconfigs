@@ -1,0 +1,45 @@
+format = """
+$conda\
+$directory\
+$git_branch\
+$git_status\
+$time\
+$character\
+"""
+command_timeout = 5000
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+continuation_prompt = '[➜](bold #CBA6F7) '
+
+[conda]
+style = "bold fg:#11111B bg:#CBA6F7"
+format = "[](#CBA6F7)[$symbol$environment]($style)[ ](#CBA6F7)"
+ignore_base = false
+
+[directory]
+read_only = " "
+style = "bold fg:#11111B bg:#CBA6F7"
+format = "[](#CBA6F7)[ $path ]($style)[$read_only]($style)[](bg:#745699 fg:#CBA6F7)[](bg:#CBA6F7 fg:#745699)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+style = "bold fg:#11111B bg:#CBA6F7"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bold fg:#11111B bg:#CBA6F7"
+format = '[$all_status$ahead_behind ]($style)[](bg:#745699 fg:#CBA6F7)[](bg:#CBA6F7 fg:#745699)'
+
+[time]
+disabled = false
+#time_format = "%R" # Hour:Minute Format
+use_12hr = true
+style = "bold fg:#11111B bg:#CBA6F7"
+format = '[ $time ]($style)[ ](#CBA6F7)'
+
+[character]
+success_symbol = '[➜](bold #CBA6F7) '
+error_symbol = '[✗](bold #CBA6F7) '

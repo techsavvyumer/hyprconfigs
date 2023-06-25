@@ -1,0 +1,13 @@
+{
+	"theme": "auto",
+	"color_scheme": "auto",
+	"font_size": 14,
+	"dark_theme": "Adaptive.sublime-theme",
+	"light_theme": "Default.sublime-theme",
+	"dark_color_scheme": "Catppuccin Mocha.sublime-color-scheme",
+	"light_color_scheme": "Catppuccin Latte.sublime-color-scheme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+}
