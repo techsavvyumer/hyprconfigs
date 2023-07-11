@@ -1,0 +1,2 @@
+#!/bin/bash
+libinput list-devices | grep -A 1 TouchPad | awk 'FNR==2 {print $2}' | xargs -l evtest --grab 
