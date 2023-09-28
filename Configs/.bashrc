@@ -1,6 +1,6 @@
 #!/bin/bash
 iatest=$(expr index "$-" i)
-PATH="~/bin:$PATH"
+PATH="~/bin:~/.local/bin:$PATH"
 #######################################################
 # SOURCED ALIAS'S AND SCRIPTS BY zachbrowne.me
 #######################################################
@@ -422,49 +422,7 @@ alias nvidia-disable6='echo -e "GPU detached (now vfio ready)\nCOMPLETED!"'
 
 alias fixbt='sudo rmmod btusb && echo "Driver Removed" && sudo modprobe btusb && echo "Driver Added" && sudo systemctl restart bluetooth && echo "Bluetooth Service Restarted"'
 alias remove-orphan='sudo pacman -Qdt | cut -d" " -f1 | sudo pacman -R - 2>/dev/null'
-alias minecraft='cd ~/Downloads && prime-run java -jar SKlauncher\ 3.0.jar'
 alias fixauth='xhost + local:'
-alias hyprupdate='yay -S --needed hyprland-git hyprpicker-git waybar-hyprland-git xdg-desktop-portal-hyprland-git'
-
-# Get the current terminal width using tput
-TERMINAL_WIDTH=$(tput cols)
-# Only apply this configuration when the terminal window is at least 80 columns wide
-if [[ $TERMINAL_WIDTH -ge 60 ]]; then
-# Configuration for terminals with a width of at least 80 columns
-  STARSHIP_CONFIG="/home/umer/.config/starship.toml"
-fi
-export STARSHIP_CONFIG=$STARSHIP_CONFIG
-
-# Define a function to source .bashrc when the window size changes
-function refreshbash() {
-  # Get the current terminal width using tput
-  TERMINAL_WIDTH=$(tput cols)
-  # Only apply this configuration when the terminal window is at least 80 columns wide
-  if [[ $TERMINAL_WIDTH -ge 60 ]]; then
-  # Configuration for terminals with a width of at least 80 columns
-    STARSHIP_CONFIG="/home/umer/Downloads/starship.toml"
-    export STARSHIP_CONFIG=$STARSHIP_CONFIG
-  else
-    export STARSHIP_CONFIG=""
-  fi
-  source ~/.bashrc
-}
-# Bind the function to the WINCH signal (window size change)
-trap refreshbash WINCH
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/umer/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/umer/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/umer/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/umer/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+alias themeswitch='/home/umer/.config/qtile/scripts/theme_switcher.sh'
+alias lockbetter="xdotool key ctrl+alt+l"
+alias connectbt='blueman-manager'

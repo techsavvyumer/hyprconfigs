@@ -9,8 +9,29 @@ this did it for me for rofi, maybe it could be your issue for electron
 sudo libinput list-devices
 evtest --grab /dev/input/event3
 
+
+xinput list
+xinput list-props "SynPS/2 Synaptics TouchPad"
+xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0
+#0 means disable, 1 means enable
+
+
+Python Project requirements.txt
+Command:
+pip freeze > requirements.txt
+It works fine, but the problem with this approach is that it includes all the packages that are installed via pip install <package_name> and the sub-dependency packages.
+To fix this issue, you can create a Virtual Python Environment by using the following command:
+python -m venv env_name #it will create python venv in working directory
+OR install pipreqs using:
+pip install pipreqs
+and run the following command:
+pipreqs /path/to/project
+Pipreqs uses imports of projects to generate a requirements.txt file. So, it is essential to note that pipreqs will not include the external plugins required by the projects. These plugins might be used internally by the packages. You must manually add those in a requirement.txt for such cases.
+
+
+
 #Fetch Latest 25 Mirrors Sort by Speed, After this run pacman -Syyu and yay -Syyu
-sudo reflector --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --latest 15 --sort rate --save /etc/pacman.d/mirrorlist
 
 https://superuser.com/questions/1321821/cant-boot-computer-after-enabling-client-hyper-v
 
